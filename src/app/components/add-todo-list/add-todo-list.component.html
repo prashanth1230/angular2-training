@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Add Todo Item</h1>
+  <form #addTodoList="ngForm" (ngSubmit)="addNewItem()">
+    <div class="form-group">
+      <label for="label">Label</label>
+      <input type="text" class="form-control" id="label" name="label" required [(ngModel)]="label">
+    </div>
+
+    <div class="form-group">
+      <label for="priority">Priority</label>
+      <input type="number" class="form-control" id="priority" name="priority" [(ngModel)]="priority">
+    </div>
+
+    <div class="form-group">
+      <label for="done">Status</label>
+      <input type="checkbox" id="done" name="done" [(ngModel)]="done">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>

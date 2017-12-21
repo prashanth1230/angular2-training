@@ -1,0 +1,6 @@
+.label {
+    font-weight: bold;
+}
+.done {
+    border-bottom: 2px black solid;
+}
